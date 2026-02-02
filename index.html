@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Munna Bhai MBBS: Manal Recovery Plan </title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    h1, h2 { color: #ff4d88; }
+    p { font-size: 18px; }
+    button {
+      font-size: 18px;
+      padding: 12px 20px;
+      margin: 15px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      background-color: #ff4d88;
+      color: white;
+    }
+    #noBtn {
+      background-color: #999;
+      position: absolute;
+    }
+    .page { display: none; }
+    img {
+      max-width: 300px;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1" style="display:block;">
+  <h1>🚨 Medical Alert 🚨</h1>
+  <p><b>Manal</b> has been suffering from a serious illness as per her new reports.</p>
+  <button onclick="showPage(2)">See Report</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <h2>🩺 Diagnosis Report</h2>
+  <audio src="uske liye yeh ganna banaao _ saiyaara _ #aneetpadda #song _" autoplay loop></audio>
+  <p>
+    Manal has been suffering from<br><br>
+    <b>Acute Deficiency of Vitamin NV (no valentine) </b><br><br>
+    Doctors have issued an urgent prescription to find a NV.
+  </p>
+  <button onclick="showPage(3)">See Prescription </button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <h2>Prescription</h2>
+  <p>
+    1️⃣ <b>Subah, Dopahar, Shaam:</b><br>
+    500mg of <b>you</b> to be taken with a side of <b>pyaar, gifts and your sweetness</b> 💕<br><br>
+
+    2️⃣ <b>Parhez (To be avoided):</b><br>
+    ❌ Ghosting<br>
+    ❌ Dry Replies<br><br>
+
+    ⚠️ <b>Warning:</b><br>
+    Side effects include non-stop smiling and<br>
+    Ami ki daant for staying up late on the phone
+  </p>
+  <button onclick="showPage(4)">How Can I Help?</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+  <h2>⚠️ Important Notice ⚠️</h2>
+  <p>
+    Manal handling is dangerous for health 😌<br><br>
+    Click at your own risk!
+  </p>
+  <h2>Will you be her Valentine and cure her illness forever?</h2>
+
+  <button onclick="showPage(5)">YES</button>
+  <button id="noBtn" onmouseover="moveNo()">NO🙄</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+  <h1>🥹💗 THANK YOU 💗🥹</h1>
+  <p>Thanks for being <b>Manal’s Valentine</b> </p>
+
+  <!-- CHANGE IMAGE LINK BELOW -->
+  <img src="2decb223c685750809b9f0666d009d40" 
+  <p>You have successfully cured the illness</p>
+</div>
+
+<script>
+  function showPage(num) {
+    let pages = document.getElementsByClassName("page");
+    for (let i = 0; i < pages.length; i++) {
+      pages[i].style.display = "none";
+    }
+    document.getElementById("page" + num).style.display = "block";
+  }
+
+  function moveNo() {
+    let x = Math.random() * (window.innerWidth - 120);
+    let y = Math.random() * (window.innerHeight - 60);
+    let noBtn = document.getElementById("noBtn");
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+  }
+</script>
+
+</body>
+</html>
