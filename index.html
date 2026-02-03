@@ -116,19 +116,7 @@
     noBtn.style.top = y + "px";
   }
 </script>
-  function showPage(num) {
-  let pages = document.getElementsByClassName("page");
-  for (let i = 0; i < pages.length; i++) {
-    pages[i].style.display = "none";
-  }
-  document.getElementById("page" + num).style.display = "block";
 
-  // FIX: Start music when moving from Page 1 to Page 2
-  let song = document.getElementById("mySong");
-  if (num === 2) {
-    song.play();
-  }
-}
 
 </body>
 </html>
